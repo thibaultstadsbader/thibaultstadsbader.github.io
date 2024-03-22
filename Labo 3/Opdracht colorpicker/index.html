@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Opdracht colorpicker</title>
+    <title>colorpicker uitbreiding</title>
 </head>
 <body>
 
-<div class="container">
-
-    <div id="blokje"></div>
-
-    <p>0</p>
-    <input type="range" class="slider" min="0" max="100">
-    <p>255</p>
-    <p>Red</p>
-    <label class="label" id="lblRed"></label>
-    <br>
-
-    <p>0</p>
-    <input type="range" class="slider" min="0" max="100">
-    <p>255</p>
-    <p>Green</p>
-    <label class="label" id="lblGreen"></label>
-    <br>
-
-    <p>0</p>
-    <input type="range" class="slider" min="0" max="100">
-    <p>255</p>
-    <p>Blue</p>
-    <label class="label" id="lblBlue"></label>
-    <br>
-
-</div>
+<section class="colorPicker">
+    <div class="componenten">
+        <div class="component">
+            <span>0<input type="range" id="sliderRed" class="slider" min="0" max="100" /> 255</span>
+            <span>Red</span>
+            <span class="label" id="labelRed">0</span>
+        </div>
+        <div class="component">
+            <span>0<input type="range" id="sliderGreen" class="slider" min="0" max="100" /> 255</span>
+            <span>Green</span>
+            <span class="label" id="labelGreen">0</span>
+        </div>
+        <div class="component">
+            <span>0<input type="range" id="sliderBlue" class="slider" min="0" max="100" /> 255</span>
+            <span>Blue</span>
+            <span class="label" id="labelBlue">0</span>
+        </div>
+    </div>
+    <div class="colorBoxRond" id="colorBox"></div>
+    <input type="button" id="btnSave" value="Save">
+</section>
 
 <script src="scripts/code.js"></script>
 </body>
